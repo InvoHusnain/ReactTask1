@@ -1,0 +1,135 @@
+.dev{
+    background-color: #F16A22;
+    padding: 20px 0px;
+    margin: 120px 0px;
+}
+
+.star-dev{
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-weight: 800;
+}
+
+.dev-content h1{
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+}
+
+.dev-content p{
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.system h2,.app h2{
+    font-family: "poppins",sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #F16A22;
+    text-align: center;
+}
+
+.blockchain h2,.ai h2{
+    font-family: "poppins",sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #F16A22;
+    text-align: center;
+}
+
+.dev-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 30px; */
+    position: relative;
+}
+
+.system , .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.83);
+    -moz-box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.83);
+}
+
+.blockchain, .ai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.83);
+    -moz-box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.83);
+}
+
+.system-blockchain{
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.app-ai{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .system, .app, .blockchain, .ai{
+        width: 200px;
+        height: 150px;
+    }
+
+    .blockchain h2,.ai h2 , .system h2,.app h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:935px) {
+    .dev-content{
+        text-align: center;
+    }
+    .system-blockchain, .app-ai{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .dev-cards{
+        column-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .star-dev{
+        font-size: 25px;
+    }
+    .dev-content h1{
+        font-size: 23px;
+    }
+    .dev-content p{
+        font-size: 14px;
+    }
+    .blockchain h2, .ai h2, .system h2, .app h2 {
+        font-size: 20px;
+    }
+    .system, .app, .blockchain, .ai {
+        width: 160px;
+        height: 120px;
+    }
+}

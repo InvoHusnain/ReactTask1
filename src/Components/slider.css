@@ -1,0 +1,47 @@
+.slider-contain{
+    margin: 80px 0px;
+}
+.slider h3{
+    font-family: "poppins",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.slick-next{
+    position: relative;
+}
+
+.slick-next::before {
+    content: url(../images/slidearrow.svg) !important;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    background-color: #ffc400;
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1199px) {
+    .slick-next::before {
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .slick-next::before {
+        margin-right: 0px;
+        top: 50px;
+        right: 270px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slick-next{
+        display: none !important;
+    }
+    .slider-contain img{
+        text-align: center;
+    }
+}

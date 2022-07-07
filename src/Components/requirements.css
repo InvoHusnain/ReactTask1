@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.req-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0px;
+}
+
+.req-image img{
+    width: 70%;
+}
+
+.star-blue{
+    color: #F16A22;
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.development{
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.req-content h3{
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 400;
+}
+
+.req-header{
+    width: 80%;
+}
+
+.labo-heading , .project-heading{
+    font-family: "poppins",sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+}
+
+.labo-heading, .project-heading{
+    position: relative;
+}
+
+.labo-heading::after{
+    content: "";
+    border-bottom: 5px solid;
+    width: 80px;
+    bottom: 15px;
+    color: #F16A22;
+    position: absolute;
+    left: 10px;
+}
+
+.project-heading::after{
+    content: "";
+    border-bottom: 5px solid;
+    width: 238px;
+    bottom: 15px;
+    color: #FFC70F;
+    position: absolute;
+    left: 10px;
+}
+
+.row-head-1{
+    font-family: "poppins",sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    border-bottom: 1px solid;
+    border-color: #999999;
+    border-bottom-style: dotted;
+}
+
+.row-head-2{
+    font-family: "poppins",sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+
+.labo-point-1, .project-point-1{
+    font-family: "poppins",sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    border-color: #999999;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.labo-point-2, .project-point-2{
+    font-family: "poppins",sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    border-left: 1px solid;
+    border-left-style: dotted;
+    border-color: #999999; 
+}
+
+/* td.labo-points{
+    border-bottom: 1px solid;
+} */
+
+td.project-points{
+    border-bottom: 1px solid;
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    background-color: none !important;
+}
+
+.css-15wwp11-MuiTableHead-root{
+    border-bottom: none !important;
+}
+
+.req-btn{
+    border: 1px solid #F16A22  !important;
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
+    font-family: "Poppins",sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #F16A22 !important;
+    margin-top: 10px !important;
+}
+
+.labo-point-1 ul{
+    padding-left: 30px;
+}
+.labo-point-2 ul{
+    padding-left: 15px;
+}
+.project-point-1 ul{
+    padding-left: 35px;
+}
+.project-point-2 ul{
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .star-blue{
+        font-size: 35px;
+    }
+    
+    .development{
+        font-size: 35px;
+    }
+
+    .req-header h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    /* .req-main{
+        flex-direction: column !important;
+    } */
+    .req-image{
+        text-align: center;
+    }
+    .req-image img{
+        width: 80% !important;
+    }   
+    
+    .req-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .req-header{
+        text-align: center;
+    } */
+
+    .req-header h3{
+        font-size: 23px !important;
+    }
+
+    .star-blue{
+        font-size: 26px !important;
+    }
+
+    .development{
+        font-size: 26px !important;
+    }
+
+    .labo-heading , .project-heading{
+        font-family: "poppins",sans-serif !important;
+        font-size: 21px !important;
+        font-weight: 800 !important;
+    }
+
+    .row-head-1 {
+        font-size: 16px !important;
+    }
+    .row-head-2 {
+        font-size: 16px !important;
+    }
+
+    .labo-point-1, .project-point-1{
+        font-size: 12px !important;
+    }
+    
+    .labo-point-2, .project-point-2{
+        font-size: 12px !important;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .req-image img{
+        width: 50% !important;
+    }
+    .row-head-1 {
+        font-size: 14px !important;
+    }
+    .row-head-2 {
+        font-size: 14px !important;
+    }
+    .labo-point-1 ul{
+        padding-left: 30px;
+    }
+    .labo-point-2 ul{
+        padding-left: 15px;
+    }
+    .project-point-1 ul{
+        padding-left: 35px;
+    }
+    .project-point-2 ul{
+        padding-left: 20px;
+    }
+}

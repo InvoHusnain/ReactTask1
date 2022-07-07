@@ -1,0 +1,103 @@
+.video-contain{
+    margin: 220px 0px 150px 0px;
+    /* background-color: blue; */
+}
+
+.video-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.modal-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-play img{
+    width: 100%;
+}
+
+.vid-1{
+    flex: 1;
+}
+
+.vid-2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-contain h2{
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.video-contain p{
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    padding-right: 60px;
+}
+
+.video-star{
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #F16A22;
+}
+
+.video-vid{
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+}
+
+iframe{
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width:900px) {
+    .video-contain{
+        margin: 0px 100px;
+    }
+    .video-main{
+        flex-direction: column !important;
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+    .video-content{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .video-contain p{
+        padding: 0px 50px;
+    }
+    .modal-play{
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .video-star, .video-vid{
+        font-size: 30px;
+    }
+    .video-contain h2{
+        font-size: 25px;
+    }
+    .video-contain p{
+        font-size: 13px;
+    }
+    .req-btn{
+        font-size: 15px !important;
+    }
+    .modal-play{
+        margin-right: 40px;
+    }
+}

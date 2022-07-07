@@ -1,0 +1,116 @@
+.Star-blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.blue{
+    font-family: "Poppins",sans-serif;
+    font-size: 60px;
+    font-weight: 800 !important;
+    text-align: left;
+    line-height: 70px;
+    margin: 0;
+}
+
+.company{
+    font-family: "Poppins",sans-serif;
+    font-size: 50px;
+    font-weight: 600 !important;
+    text-align: left;
+    margin: 0;
+}
+
+.hero-content p{
+    font-family: "poppins",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #666666;
+}
+
+.hero-btn{
+    float: left;
+    background-color: #F16A23 !important;
+    border-radius: 50px !important;
+    font-family: "roboto",sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+    padding: 10px 30px !important;
+}
+
+.hero-btn img{
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* .company{
+    font-family: "poppins",sans-serif;
+    font-size: 50px !important;
+    font-weight: 800;
+    margin: 0;
+} */
+
+.Offshore{
+    text-decoration: 8px #FFC70F underline;
+}
+
+
+@media screen and (max-width:1100px) {
+    .blue{
+        font-size: 50px;
+    }
+    .company{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .blue{
+        font-size: 45px;
+    }
+    .company{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 100px 0px 50px 0px;
+    }
+    
+    .hero-image{
+        text-align: center;
+    }
+
+    .hero-image img{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .blue{
+        font-size: 35px;
+    }
+    .company{
+        font-size: 35px;
+    }
+    .hero-content p{
+        font-size: 15px;
+    }
+    .hero-btn{
+        font-size: 18px !important;
+    }
+}

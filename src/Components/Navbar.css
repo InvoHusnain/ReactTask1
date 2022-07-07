@@ -1,0 +1,128 @@
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    background-color: #fff;
+    color: black;
+    /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
+  }
+  
+  .main-list-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .btn{
+    display: block;
+    color: white !important;
+    background-color: #F16A23 !important;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+    a{
+        text-decoration: none;
+    }
+
+  .list {
+    margin: 0px 0px;
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    }
+
+  .brand-name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+  
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #F16A23;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  .hamburger:hover {
+    background-color: #F16A23;
+  }
+  
+  @media screen and (max-width: 992px) {
+
+    .btn{
+        display: block;
+        background-color: white !important;
+        color: #F16A23 !important;
+        margin: 0 auto;
+    }
+    .hamburger {
+      display: block;
+    }
+
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 150px);
+      background-color: #F16A23;
+      /* border-top: 1px solid black; */
+      display: none;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .navigation-menu li a {
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+  }
+  

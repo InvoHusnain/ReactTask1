@@ -1,0 +1,81 @@
+.doc-contain{
+    margin: 120px 0px;
+}
+.doc-head h2{
+    font-family: "poppins",sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.down-card{
+    border: 4px solid #99999994;
+    border-radius: 15px;
+    font-family: "poppins",sans-serif;
+    font-size: 13px;
+    padding: 10px 180px 30px 30px;
+    transition: 0.1s ease-in all;
+    position: relative;
+}
+
+.quotation-card{
+    border: 4px solid #99999994;
+    border-radius: 15px;
+    font-family: "poppins",sans-serif;
+    font-size: 13px;
+    padding: 10px 180px 30px 30px;
+    transition: 0.1s ease-in all;
+    position: relative;
+}
+
+.quotation-card:hover,.down-card:hover{
+    border: 4px solid #FFBC0F;
+    background-color: #FFBC0F;
+    color: white;
+}
+
+.quotation-card:hover .quotation-btn , .down-card:hover .down-btn{
+    border: none !important;
+    background-color: white !important;
+    color: #FFBC0F !important;
+}
+
+.down-btn, .down-btn:hover{
+    background-color: #F16A23;
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 25px;
+}
+
+.quotation-btn, .down-btn{
+    background-color: #F16A23 !important;
+    font-family: "poppins",sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border-radius: 30px !important;
+    color: white !important;
+    padding: 10px 25px !important;
+}
+
+.down-card::after{
+    position: absolute;
+    content: url(../images/Docs.svg);
+    top: 20px;
+    right: 25px;
+}
+
+.quotation-card::after{
+    position: absolute;
+    content: url(../images/Paperplane.svg);
+    top: 20px;
+    right: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .doc-head h2{
+        font-size: 30px;
+    }
+}

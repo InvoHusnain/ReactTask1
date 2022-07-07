@@ -1,0 +1,134 @@
+.process-main {
+  margin: 50px 0px;
+  /* background-color: yellow; */
+}
+
+.process-head h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #f16a23;
+  text-align: center;
+}
+
+.arrow-main {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-points-0,
+.process-points-1,
+.process-points-2,
+.process-points-3,
+.process-points-4,
+.process-point-5 {
+  border: 1px solid;
+  /* border-left: none !important; */
+  border-style: dotted;
+  text-align: center;
+  min-height: 100px;
+  min-width: 210px;
+  position: relative;
+}
+
+.process-points-0::after {
+  content: url(../images/Union.svg);
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.process-points-1::after {
+  content: url(../images/Union.svg);
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.process-points-2::after {
+  content: url(../images/Union.svg);
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.process-points-3::after {
+  content: url(../images/Union.svg);
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.process-points-4::after {
+  content: url(../images/Union.svg);
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.process-points-0 h2,
+.process-points-1 h2,
+.process-points-2 h2,
+.process-points-3 h2,
+.process-points-4 h2,
+.process-point-5 h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .arrow-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .process-points-0,
+  .process-points-1,
+  .process-points-2,
+  .process-points-3,
+  .process-points-4,
+  .process-point-5 {
+    
+    margin-bottom: 40px;
+  }
+  .process-points-0::after {
+    top: 90px;
+    transform: rotate(90deg);
+    left: 85px;
+  }
+  .process-points-1::after {
+    top: 90px;
+    transform: rotate(90deg);
+    left: 85px;
+  }
+  .process-points-2::after {
+    top: 90px;
+    transform: rotate(90deg);
+    left: 85px;
+  }
+  .process-points-3::after {
+    top: 90px;
+    transform: rotate(90deg);
+    left: 85px;
+  }
+  .process-points-4::after {
+    top: 90px;
+    transform: rotate(90deg);
+    left: 85px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .process-points-0 h2,
+  .process-points-1 h2,
+  .process-points-2 h2,
+  .process-points-3 h2,
+  .process-points-4 h2,
+  .process-point-5 h2 {
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+  }
+}
